@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="4001" y="-2"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Le5-bG-b9U">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nZq-1f-eGt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="nZq-1f-eGt" customClass="TabBarViewController" customModule="CatCafeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Zm-UU-HYf">
                         <autoresizingMask key="autoresizingMask"/>
