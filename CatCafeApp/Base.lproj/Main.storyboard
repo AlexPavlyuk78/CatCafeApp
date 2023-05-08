@@ -45,43 +45,93 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fht-LP-BKA">
-                                <rect key="frame" x="16" y="272" width="83" height="35"/>
+                                <rect key="frame" x="16" y="553" width="83" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Додати"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Додати" cornerStyle="large"/>
                                 <connections>
-                                    <action selector="tappingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2y-YL-tI6"/>
+                                    <action selector="addItemToTheCart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yoc-hs-VW0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-YJ-2kO">
+                                <rect key="frame" x="336" y="24" width="24" height="20"/>
+                                <color key="backgroundColor" red="0.88600045442581177" green="0.83920973539352417" blue="0.78399556875228882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image17" translatesAutoresizingMaskIntoConstraints="NO" id="dmH-di-CTu">
+                                <rect key="frame" x="16" y="259" width="343" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Яскравий збалансований смак цього напою гарантує бренд Рістора" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k1-UB-vVB">
+                                <rect key="frame" x="16" y="439" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'Swiss Chocolate&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N19-ZZ-gmC">
+                                <rect key="frame" x="126" y="395" width="123" height="20.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-vO-Gvc">
+                                <rect key="frame" x="268" y="553.5" width="91" height="34.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Забрати">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deletebuttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsa-4S-jtJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.88600045442581177" green="0.83920973539352417" blue="0.78399556875228882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dmH-di-CTu" firstAttribute="top" secondItem="hUV-na-ntr" secondAttribute="bottom" constant="82" id="2Ud-Yb-feW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0S8-vO-Gvc" secondAttribute="trailing" constant="16" id="3I4-eD-CGs"/>
                             <constraint firstItem="zBz-Fn-80p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="4Ga-o0-nqW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N19-ZZ-gmC" secondAttribute="trailing" constant="126" id="6nH-D5-vyw"/>
                             <constraint firstItem="R17-mk-dLJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="125" id="9vz-TA-5Mc"/>
+                            <constraint firstItem="dmH-di-CTu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BGi-MJ-vZg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pht-ir-jZt" secondAttribute="trailing" constant="30" id="Ba7-pd-f3w"/>
+                            <constraint firstItem="eLd-YJ-2kO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ECd-6k-LZE"/>
                             <constraint firstItem="NlY-o4-tGr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FKz-YD-DbO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7k1-UB-vVB" secondAttribute="trailing" constant="16" id="HEC-mN-MNI"/>
+                            <constraint firstItem="fht-LP-BKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hji-Ds-JUb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NlY-o4-tGr" secondAttribute="bottom" constant="928" id="Irj-hw-rsR"/>
                             <constraint firstItem="pht-ir-jZt" firstAttribute="top" secondItem="hUV-na-ntr" secondAttribute="bottom" id="Kva-Cx-8W6"/>
                             <constraint firstItem="pht-ir-jZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="N5p-MD-pbb"/>
                             <constraint firstItem="R17-mk-dLJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="N9i-Fr-AdE"/>
+                            <constraint firstItem="0S8-vO-Gvc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fht-LP-BKA" secondAttribute="trailing" constant="8" symbolic="YES" id="SrA-Sb-OLW"/>
+                            <constraint firstItem="N19-ZZ-gmC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="Tqu-X1-ZNq"/>
+                            <constraint firstItem="N19-ZZ-gmC" firstAttribute="top" secondItem="dmH-di-CTu" secondAttribute="bottom" constant="8" symbolic="YES" id="Twz-vj-hur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fht-LP-BKA" secondAttribute="bottom" constant="10" id="VzK-Wa-X9S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dmH-di-CTu" secondAttribute="trailing" constant="16" id="Yfg-1n-vZe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hUV-na-ntr" secondAttribute="bottom" constant="421" id="a0e-k0-ceq"/>
                             <constraint firstAttribute="trailing" secondItem="R17-mk-dLJ" secondAttribute="trailing" constant="179" id="aPf-NM-blu"/>
-                            <constraint firstItem="fht-LP-BKA" firstAttribute="top" secondItem="pht-ir-jZt" secondAttribute="bottom" constant="23" id="fWc-p0-883"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dmH-di-CTu" secondAttribute="bottom" constant="211" id="d1a-sj-6Xf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0S8-vO-Gvc" secondAttribute="bottom" constant="10" id="d3F-Ab-fOH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eLd-YJ-2kO" secondAttribute="trailing" constant="16" id="eBG-mA-TwN"/>
+                            <constraint firstItem="7k1-UB-vVB" firstAttribute="top" secondItem="N19-ZZ-gmC" secondAttribute="bottom" constant="23.5" id="fIp-Ri-zKJ"/>
                             <constraint firstItem="zBz-Fn-80p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hhd-fD-l4j"/>
                             <constraint firstItem="hUV-na-ntr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="iIa-TI-SEg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hUV-na-ntr" secondAttribute="trailing" constant="68" id="qn9-H0-hEz"/>
-                            <constraint firstItem="fht-LP-BKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tuF-o5-res"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fht-LP-BKA" secondAttribute="trailing" symbolic="YES" id="w9k-au-Y4f"/>
+                            <constraint firstItem="fht-LP-BKA" firstAttribute="top" secondItem="7k1-UB-vVB" secondAttribute="bottom" constant="78" id="r9y-c4-0Nr"/>
+                            <constraint firstItem="0S8-vO-Gvc" firstAttribute="top" secondItem="7k1-UB-vVB" secondAttribute="bottom" constant="78.5" id="sB6-xk-FCL"/>
+                            <constraint firstItem="7k1-UB-vVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uVf-vz-d7f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zBz-Fn-80p" secondAttribute="trailing" constant="147" id="wLA-cA-4Ff"/>
                             <constraint firstItem="hUV-na-ntr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="yYN-q4-vuU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="pawprint.fill" catalog="system" id="klJ-IJ-1ep"/>
                     <connections>
+                        <outlet property="deleteButton" destination="0S8-vO-Gvc" id="MEl-Be-me0"/>
                         <outlet property="imageView" destination="hUV-na-ntr" id="67Q-Rd-yc1"/>
+                        <outlet property="itemCart" destination="eLd-YJ-2kO" id="M80-vP-kBh"/>
                         <outlet property="tappingButton" destination="fht-LP-BKA" id="huU-dh-g9R"/>
                     </connections>
                 </viewController>
@@ -280,7 +330,9 @@
     </scenes>
     <resources>
         <image name="Image14" width="1000" height="658"/>
+        <image name="Image17" width="1000" height="667"/>
         <image name="Image8" width="360" height="360"/>
+        <image name="cart.badge.plus" catalog="system" width="128" height="103"/>
         <image name="pawprint.circle.fill" catalog="system" width="128" height="123"/>
         <image name="pawprint.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">

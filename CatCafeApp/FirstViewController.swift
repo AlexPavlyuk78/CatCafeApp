@@ -7,22 +7,37 @@
 
 import UIKit
 
+
 class FirstViewController: UIViewController {
     
-   
     @IBOutlet weak var imageView: UIImageView!
     
     
+    @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var tappingButton: UIButton!
+    
+    
+    @IBOutlet weak var itemCart: UIImageView!
+    
+    var cartItems = ["Coffee", "Milc", "Banana"] // array to store cart items
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tappingButton.layer.cornerRadius = 8
-
-  }
-    
-    @IBAction func tappingButton(_ sender: UIButton) {
+        deleteButton.layer.cornerRadius = 8
+        
+        
     }
     
+    
+    @IBAction func addItemToTheCart(_ sender: UIButton) {
+    }
+    
+    
+    
+    func deleteItemFromtheCart(_ sender: UIButton) {
+        
+    }
 }
